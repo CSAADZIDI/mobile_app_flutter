@@ -44,7 +44,7 @@ class _GameScreenState extends State<GameScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(isOk ? "images/ok.png" : "images/not_ok.png"),
+            Image.asset(isOk ? "assets/images/ok.png" : "assets/images/not_ok.png"),
             const SizedBox(height: 20),
             Text(
               "$content",

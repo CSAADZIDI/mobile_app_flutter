@@ -1,4 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Add camera permission here, inside <manifest> but outside <application> -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Optional: needed for Android 13+ if you want to access saved photos -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.CAMERA"/>     
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:label="demo_flutter"
         android:name="${applicationName}"

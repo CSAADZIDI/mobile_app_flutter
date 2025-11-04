@@ -1,6 +1,8 @@
 //import 'package:demo_flutter/screens/darklight.screen.dart';
 // import 'package:demo_flutter/screens/hello.screen.dart';
-import 'package:demo_flutter/screens/game.screen.dart';
+//import 'package:demo_flutter/screens/game.screen.dart';
+//import 'package:demo_flutter/screens/cam.screen.dart';
+import 'package:demo_flutter/screens/gallery.screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,8 +15,10 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Camera Demo',
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: Scaffold(
-        body: GameScreen(), // DarkLightScreen(), // HelloScreen(user: "Chaima "),
+        body: GalleryScreen(),//CamScreen(),//GameScreen(), // DarkLightScreen(), // HelloScreen(user: "Chaima "),
       ),
     );
   }
