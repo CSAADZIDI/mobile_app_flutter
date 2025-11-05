@@ -38,8 +38,8 @@ class _GalleryScreenState extends State<GalleryScreen> {
       _isLoading = true;
     });
 
-    final String endpoint = 'YOUR_AZURE_VISION_ENDPOINT';
-    final String subscriptionKey = 'YOUR_AZURE_SUBSCRIPTION_KEY';
+    final String endpoint = 'https://visionprebuiltmodelcs.cognitiveservices.azure.com/';
+    final String subscriptionKey = 'DTeIc46jK7rVge82NVxYkIFRxDSyuDenw7JMaRnpKscgVcjEpV1VJQQJ99BKAC5T7U2XJ3w3AAAFACOGOlwP';
 
     try {
       final bytes = await _selectedImage!.readAsBytes();
